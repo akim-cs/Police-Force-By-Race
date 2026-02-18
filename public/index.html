@@ -58,6 +58,7 @@
 
     <div class="row g-4 mb-5">
       <div class="col-md-6 offset-md-3">
+        <h2>Write-up</h2>
         <p>
           The question we were trying to answer with our visualization is 
           "Does the different level of police use of force in Seattle fall disproportionately
@@ -70,6 +71,9 @@
           of police force used, so we thought using two separated bar chart was more suitable when 
           we decided to compare both the intensity of police force used in incidents separated by race 
           and total crime rate also separated by race.
+        </p>
+
+        <p>
           So, we used two bar charts where one shows the intensity of police force used for the crimes 
           separated by race and the other shows the total crime rate separated by race. The visualization
           on the right shows the total crime rate chart separated by race. For this chart we decided not to
@@ -80,14 +84,61 @@
           We grouped the data into racial groupd and each group has three bars where each bar represents 
           each force level. This shows how severe the force was within each race and can see what racial 
           group commits the most intense crimes which results in higher intensity of police force used.
-          
+        </p>
+
+        <p>
           In both visualizations we made the LabelAngle in the x-axis to be -30 degrees rather than having 
           to read the label completely sideways so that it is easier for the audience to read the labels.
         </p>
 
         <p>
           There are three interaction designs we incorporated into our visualization, scroll, play button, 
-          and tooltip on hover.
+          and tooltip on hover. We thought comparing the incidents and the police force used in the same 
+          year was necessary so we added a year slider so that the audience can interactively switch back 
+          and forth among the years from 2014 to 2022 to see the differnce in total incidents and intensity 
+          of police force used from year to year. 
+        </p>
+        
+        <p>
+          The play button was added to show the transition from 2014 
+          to 2022 more efficiently without having to scroll through each one. When looking at the charts from 
+          each year, it might seem like the range of the y-axis is not fitting for some of the visualizations, 
+          however, we made that decision to make the transition run a little smoother and allow the viewers to 
+          really see how the incident rates change and the intensity of the police force change throughout time. 
+          Making all the charts the same height allows the views to compare the different charts from 
+          different years more efficiently without having to pay attention to the axis as much as they would 
+          need to without this visualization choice.
+        </p>
+
+        <p>
+          When hovering over the bars the audience can view the different statistics on what the bars are 
+          representing. For the visualization on the left the tooltip shows how many of each level of police 
+          force was used that year towards the racial group and shows what percentage of each level 
+          of ploice force was within each racial groups. For the visualization on the right, the tooltip 
+          includes how many incidents were caused by each racial groups and also the percentage showing the 
+          ratio of incidents caused by the racial group to the total incidents that happened in that year.
+        </p>
+        
+        <p>
+          During the planning phase, while determining what information we wanted to include in our tooltip 
+          hover, we compared different comparisons of data and what story we would want to be telling. In 
+          addition to this, we considered what information was already more readily accessible by nature of 
+          the visualization encoding decisions we had made. Thus we decided to include the nominal race data,
+          and the ordinal level of force data with their percentages of all the incidents that required that 
+          force during the same year. We made this choice because if we had decided to compare this to all the 
+          crime incidents that occurred for that race, we felt like it wouldn't be effective because you can 
+          already compare that data within the grouped bars, but it is not as easy to compare within levels 
+          since they are spread out across races.
+        </p>
+
+        <p>
+          We decided to use Observable and embed it into the gitlab rather than using vegalite and came to 
+          realize that we cannot work together on observable together at the same time. So, after we 
+          brainstormed ideas on how to present our data, we split the work so that one person does the coding 
+          on observable and the other person does the report aspect as well as figuring out the repo. This 
+          assignment for us took about 8 hours and the most aspect that we think that took the most time is 
+          thinking of the best way to represent our data and what aspect we are going to incorporate into the 
+          visualization so that the audience can have a better time interpreting our visualization.
         </p>
       </div>
     </div>
