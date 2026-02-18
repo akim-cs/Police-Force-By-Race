@@ -56,6 +56,42 @@
       </div>
     </div>
 
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 offset-md-3">
+        <p>
+          The question we were trying to answer with our visualization is 
+          "Does the different level of police use of force in Seattle fall disproportionately
+           on certain racial groups, and how had that distribution shifted across 2014-2022?"
+        </p>
+
+        <p>
+          At first we thought of using stacked area chart where the area would show how much crime 
+          was committed by each racial group during that year, but we also wanted to show the intensity 
+          of police force used, so we thought using two separated bar chart was more suitable when 
+          we decided to compare both the intensity of police force used in incidents separated by race 
+          and total crime rate also separated by race.
+          So, we used two bar charts where one shows the intensity of police force used for the crimes 
+          separated by race and the other shows the total crime rate separated by race. The visualization
+          on the right shows the total crime rate chart separated by race. For this chart we decided not to
+           use color encoding since the racial groups were already labeled in the x-axis and color encoding 
+          them would cause redundancy in information. The visualization on the left shows the intensity of 
+          the police force used for crimes separated by racial groups. We decided to use color encoding for 
+          visualization since adding the three hue sequential scale will reinforce the severity ordering. 
+          We grouped the data into racial groupd and each group has three bars where each bar represents 
+          each force level. This shows how severe the force was within each race and can see what racial 
+          group commits the most intense crimes which results in higher intensity of police force used.
+          
+          In both visualizations we made the LabelAngle in the x-axis to be -30 degrees rather than having 
+          to read the label completely sideways so that it is easier for the audience to read the labels.
+        </p>
+
+        <p>
+          There are three interaction designs we incorporated into our visualization, scroll, play button, 
+          and tooltip on hover.
+        </p>
+      </div>
+    </div>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
     <script type="module">
       import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
