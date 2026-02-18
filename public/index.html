@@ -44,15 +44,26 @@
 
       <!-- Observable Visualization -->
       <div class="row g-4 mb-4">
-        <div class="col-md-10 offset-md-1">
+        <div class="col-12">
           <div class="card shadow">
-            <div class="card-body">
-              <iframe width="90%" height="1000" frameborder="0"
-                src="https://observablehq.com/embed/98bf81458af3401d@83?cell=*"></iframe>
+            <div class="card-body" style="overflow-x: auto;">
+              <div id="observablehq-animate-8b1d2f11"></div>
+              <div id="observablehq-vis-8b1d2f11"></div>
+              <p>Credit: <a href="https://observablehq.com/d/98bf81458af3401d@121">The Weight of Force: Seattle Police Incidents Across Race and Time by Andy Kim</a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/98bf81458af3401d@121.js?v=4";
+      new Runtime().module(define, name => {
+        if (name === "animate") return new Inspector(document.createElement("div"));
+        if (name === "vis") return new Inspector(document.querySelector("#observablehq-vis-8b1d2f11"));
+      });
+    </script>
   </body>
 </html>
